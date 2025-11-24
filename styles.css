@@ -7,27 +7,70 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: sans-serif; 
   box-sizing: border-box; 
   vertical-align: baseline; 
-  background-color: red;
+  text-rendering: optimizeLegibility;
 } 
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } 
-
-body { 
-  line-height: 1.25 ;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+  display: block; 
 }
-
-/* site styles */
 
 body {
   font-family: sans-serif;
+  line-height: 1.25; 
+}
+
+h1, h2, p, .work-item{
+  font-size: 1.25rem; 
+  padding-bottom: 1rem;
 }
 
 .content {
-  padding: 1.5rem;
-  max-width: 50rem;
-  margin: 0 auto;
+  padding: 6vw 4vw;
+  max-width: 80rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  gap: 4vw 1rem;
+  grid-template-rows: 2;
 }
 
-h1 {
-  padding-bottom: 1rem;
+.intro {
+  grid-row: 1;
+  grid-column: 4 / 10;
+  padding-right: 2.5rem;
+} 
+
+/* Work list */
+
+.work-list {
+  grid-column: 1 / 13;
+  grid-row: 2;
+}
+
+.work-item {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  gap: 1rem;
+  grid-template-rows: auto;
+  padding-bottom: 1.5rem;
+}
+
+.org {
+  grid-column: 1 / 4;
+  justify-self: right;
+  padding-right: 1rem;
+  text-align: right;
+}
+
+.title {
+  grid-column: 4 / 10;
+}
+
+.date {
+  grid-column: 10 / 12;
+  padding-left: 1rem;
+}
+
+.category {
+  grid-column: 12 / 13;
 }
