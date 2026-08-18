@@ -82,15 +82,15 @@ h1, h2, p {
 }
 
 .title {
-  grid-column: 4 / 10;
+  grid-column: 4 / 9;
 }
 
 .date {
-  grid-column: 10 / 12;
+  grid-column: 9 / 11;
 }
 
 .category {
-  grid-column: 12 / 13;
+  grid-column: 11 / 13;
 }
 
 
