@@ -41,13 +41,16 @@ h1, h2, p {
 
 .intro {
   grid-row: 1;
-  grid-column: 4 / 10;
-  padding-right: 2.5rem;
+  grid-column: 4 / 11;
+  padding-right: 2rem;
 } 
 
+.intro h1, p{
+  padding-right: 3rem;
+}
+
 .credit {
-  /* grid-row: 1; */
-  grid-column: 4 / 10;
+  grid-column: 4 / 11;
   padding-right: 2.5rem;
   margin-top: 6rem;
 } 
