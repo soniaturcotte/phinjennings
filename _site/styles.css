@@ -30,7 +30,7 @@ h1, h2, p {
 }
 
 .content {
-  padding: 6vw 4vw;
+  padding: 6vw 4vw 1vw 4vw;
   margin: auto;
   max-width: 1300px;
   display: grid;
@@ -44,6 +44,17 @@ h1, h2, p {
   grid-column: 4 / 10;
   padding-right: 2.5rem;
 } 
+
+.credit {
+  /* grid-row: 1; */
+  grid-column: 4 / 10;
+  padding-right: 2.5rem;
+  margin-top: 6rem;
+} 
+
+.credit p {
+    font-size: .9rem;
+}
 
 /* Work list */
 
@@ -87,13 +98,17 @@ h1, h2, p {
 
 @media screen and (max-width: 920px) {
   
-  .intro{
+  .intro, .credit {
     grid-column: 1 / 10;
     padding-right: 1rem;
   }
   .content h1, h2, p, .work-item{
     font-size: 1rem;
   }
+
+  .credit p {
+    font-size: .8rem;
+}
 }
 
 
